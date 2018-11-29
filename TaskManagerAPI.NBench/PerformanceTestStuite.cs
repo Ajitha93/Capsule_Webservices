@@ -40,6 +40,7 @@ namespace TaskManagerAPI.NBench
                 var name = benchmark.BenchmarkName.Split('+')[1];
                 yield return new TestCaseData(benchmark).SetName(name);
             }
+
         }
 
     }

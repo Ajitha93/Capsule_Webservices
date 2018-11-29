@@ -1,4 +1,5 @@
 C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerApi.Models\bin\Debug\TaskManagerApi.Models.dll
 C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerApi.Models\bin\Debug\TaskManagerApi.Models.pdb
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerApi.Models\obj\Debug\TaskManagerAPI.Models.csprojResolveAssemblyReference.cache
 C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerApi.Models\obj\Debug\TaskManagerApi.Models.dll
 C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerApi.Models\obj\Debug\TaskManagerApi.Models.pdb
