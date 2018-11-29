@@ -1,0 +1,13 @@
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\TaskManagerAPI.Business.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\TaskManagerAPI.Business.pdb
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\AutoMapper.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\TaskManagerAPI.DataAccess.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\TaskManagerApi.Models.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\EntityFramework.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\TaskManagerAPI.DataAccess.pdb
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\TaskManagerAPI.DataAccess.dll.config
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\TaskManagerApi.Models.pdb
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\bin\Debug\EntityFramework.xml
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\obj\Debug\TaskManagerAPI.Business.csprojResolveAssemblyReference.cache
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\obj\Debug\TaskManagerAPI.Business.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Business\obj\Debug\TaskManagerAPI.Business.pdb

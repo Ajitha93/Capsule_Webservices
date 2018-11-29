@@ -1,0 +1,12 @@
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\bin\Release\TaskManagerAPI.DataAccess.dll.config
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\bin\Release\TaskManagerAPI.DataAccess.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\bin\Release\TaskManagerAPI.DataAccess.pdb
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\bin\Release\EntityFramework.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\bin\Release\TaskManagerApi.Models.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\bin\Release\TaskManagerApi.Models.pdb
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\bin\Release\EntityFramework.xml
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\obj\Release\TaskManagerAPI.DataAccess.csprojResolveAssemblyReference.cache
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\obj\Release\TaskManagerAPI.DataAccess.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.DataAccess\obj\Release\TaskManagerAPI.DataAccess.pdb
