@@ -48,5 +48,29 @@ namespace TaskManagerAPI.Controllers
         {
             return _ITaskMaintenance.GetParentTaskDetails();
         }
+        [HttpPost]
+        public void AddUser([FromBody]UserModel userModel)
+        {
+            _ITaskMaintenance.SaveUser(userModel);
+        }
+        [HttpPost]
+        public List<UserModel> ViewUsers()
+        {
+            return _ITaskMaintenance.GetUsers();
+        }
+
+        [HttpPost]
+        public void DeleteUser([FromBody]UserModel userModel)
+        {
+            var user = _ITaskMaintenance.GetUserDetailsById(userModel.User_Id);
+            if (user != null)
+                _ITaskMaintenance.DeleteUser(user);
+        }
+        [HttpPost]
+        public UserModel GetUserById(UserModel userModel)
+        {
+            var user = _ITaskMaintenance.GetUserDetailsById(userModel.User_Id);
+            return user;
+        }
     }
 }

@@ -24,10 +24,8 @@ namespace TaskManagerAPI.Helpers.Mappings
                 .ForMember(dest => dest.Start_Date, opt => opt.MapFrom(src => src.StartDate))
                 .ForMember(dest => dest.End_Date, opt => opt.MapFrom(src => src.EndDate))
                 .ForMember(dest => dest.Priority, opt => opt.MapFrom(src => src.Priority))
-                .ForMember(dest => dest.Created_By, opt => opt.MapFrom(src => src.CreatedBy))
-                .ForMember(dest => dest.Created_Date, opt => opt.MapFrom(src => src.CreatedDate))
-                .ForMember(dest => dest.Modified_By, opt => opt.MapFrom(src => src.ModifiedBy))
-                .ForMember(dest => dest.Modified_Date, opt => opt.MapFrom(src => src.ModifiedDate));
+                ;
+                x.CreateMap<UserModel, User>();
             });
             }
     }

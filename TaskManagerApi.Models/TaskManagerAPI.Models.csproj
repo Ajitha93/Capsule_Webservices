@@ -43,6 +43,7 @@
     <Compile Include="Models\TaskDetailsModel.cs" />
     <Compile Include="Models\TaskModel.cs" />
     <Compile Include="Models\TaskSearchModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

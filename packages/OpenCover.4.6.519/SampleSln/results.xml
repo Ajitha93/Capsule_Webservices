@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+  <Modules>
+    <Module skippedDueTo="Filter" hash="1C-ED-50-DA-FD-EA-79-5F-9A-5F-01-04-5B-4B-3A-63-EF-8F-89-07">
+      <ModulePath>C:\WINDOWS\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:55:29.8805439Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F9-04-A8-31-CD-FB-23-72-95-63-5D-14-9A-A0-66-8E-7F-44-93-7A">
+      <ModulePath>C:\WINDOWS\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\sorttbls.nlp</ModulePath>
+      <ModuleTime>2018-11-23T06:48:42.2345477Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="6E-30-2E-50-36-FB-60-2C-8E-50-C0-83-54-8B-CC-EA-A8-91-B6-CC">
+      <ModulePath>C:\WINDOWS\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\sortkey.nlp</ModulePath>
+      <ModuleTime>2018-11-23T06:48:43.375131Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D9-51-D2-3D-8C-16-B3-35-50-E2-97-23-20-65-AF-AE-3E-3C-3D-FC">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\nunit-console-x86.exe</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit-console-x86</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F2-ED-FF-09-01-C9-D7-BC-29-AC-A6-93-C5-97-8A-0D-43-DD-8D-F2">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\lib\nunit-console-runner.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit-console-runner</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\lib\nunit.core.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="14-C3-4B-3E-39-7A-EE-C0-B9-2F-83-44-2F-04-8A-F7-48-7B-67-DE">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\lib\nunit.util.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\lib\nunit.core.interfaces.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D5-2D-35-25-83-75-E1-FF-01-5D-9D-43-90-C4-A9-A2-2F-9A-37-67">
+      <ModulePath>C:\WINDOWS\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:48:38.6408343Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F8-C5-15-4B-64-7C-42-48-76-D0-AA-41-FB-D7-F8-59-07-8C-5C-15">
+      <ModulePath>C:\WINDOWS\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:55:29.9117984Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="7B-D1-22-5B-7B-A7-FE-8B-DA-9A-45-CC-F9-72-CF-A3-7D-28-1B-FF">
+      <ModulePath>C:\WINDOWS\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:48:38.9063828Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="52-D9-3C-F8-7B-3B-11-89-F1-EA-BF-2B-83-43-2C-E5-9B-45-9E-BC">
+      <ModulePath>C:\WINDOWS\assembly\GAC_MSIL\System.Runtime.Remoting\2.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:48:38.8438787Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="AB-8A-C1-7A-CB-9A-53-E1-02-D8-07-0B-81-63-5A-8B-8D-E3-5A-F3">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:55:26.489838Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="29-BC-32-15-21-E8-F9-6D-87-31-AF-AD-0B-21-31-A6-BB-2F-E4-00">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\nunit-agent-x86.exe</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit-agent-x86</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\lib\nunit.core.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="14-C3-4B-3E-39-7A-EE-C0-B9-2F-83-44-2F-04-8A-F7-48-7B-67-DE">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\lib\nunit.util.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit.util</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\lib\nunit.core.interfaces.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="BA-D5-C6-DC-0C-59-DA-6B-C8-40-22-29-40-86-10-C6-40-6D-57-E5">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:55:26.6148306Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="B5-2C-52-19-7F-DE-8E-1A-EE-7C-F3-4D-31-FC-77-A2-C4-49-EE-AB">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:17.0134Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2A-F4-1C-14-5D-7A-74-B3-03-8B-1D-2A-59-DC-B6-BE-1D-C8-EF-54">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:16.9508953Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F2-26-5B-FA-55-E9-5B-BC-DD-3A-32-56-2C-38-71-11-1A-8E-6D-32">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2018-04-11T23:35:17.0290261Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="56-19-E4-7F-9D-08-2A-5D-25-92-FC-AC-8E-40-FB-0D-95-AA-95-71">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:55:26.3960819Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="27-DC-63-1E-08-40-9B-D0-4C-F5-C0-DA-E7-97-6F-18-0C-8C-A6-CD">
+      <ModulePath>C:\WINDOWS\assembly\GAC_32\System.Web\2.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:48:43.7814204Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="36-B9-FF-C0-07-EA-59-4D-23-2E-FD-CD-5A-45-CF-C0-2C-42-2A-98">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\lib\nunit.core.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit.core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="BA-D5-C6-DC-0C-59-DA-6B-C8-40-22-29-40-86-10-C6-40-6D-57-E5">
+      <ModulePath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2018-11-23T06:55:26.6148306Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="53-25-23-C6-63-70-35-C6-0C-82-04-1A-0A-BF-1A-E7-1F-EA-74-A3">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\pnunit.framework.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>pnunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="21-69-E9-47-C6-F8-02-12-31-E6-18-DE-8E-43-24-C9-AB-F7-C2-BE">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\pnunit-agent.exe</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>pnunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="5E-95-A6-AD-88-48-98-B1-62-7F-4E-5A-C1-0E-F3-B7-85-56-44-E8">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\packages\NUnit.Runners.2.6.4\tools\lib\nunit.core.interfaces.dll</ModulePath>
+      <ModuleTime>2014-12-16T16:34:36Z</ModuleTime>
+      <ModuleName>nunit.core.interfaces</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F3-5F-38-92-BA-F2-3C-6B-DA-7E-E8-FE-E8-40-24-8C-34-A9-38-6F">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Tests\bin\Debug\TaskManagerAPI.Tests.dll</ModulePath>
+      <ModuleTime>2018-11-29T12:34:32.2299738Z</ModuleTime>
+      <ModuleName>TaskManagerAPI.Tests</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="EE-92-34-AE-A6-A6-A8-2E-8A-34-A1-E4-20-3D-2A-23-C5-9D-D8-D2">
+      <ModulePath>C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Tests\bin\Debug\nunit.framework.dll</ModulePath>
+      <ModuleTime>2018-10-06T11:22:56Z</ModuleTime>
+      <ModuleName>nunit.framework</ModuleName>
+      <Classes />
+    </Module>
+  </Modules>
+</CoverageSession>

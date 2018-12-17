@@ -4,10 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e360fa3c05514743a3c7a8c7b077510f" Name="Diagram1">
-        <EntityTypeShape EntityType="TaskManagerModel.Parent_Task" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+      <Diagram DiagramId="f9b0bab1f56648b79c06d69303fba2e4" Name="Diagram1">
+        <EntityTypeShape EntityType="TaskManagerModel.Parent_Task" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskManagerModel.Project" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
         <EntityTypeShape EntityType="TaskManagerModel.Task" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaskManagerModel.User" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="TaskManagerModel.FK_Task_Parent_Task_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="TaskManagerModel.FK_Task_Project_Id" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -21,11 +21,10 @@ namespace TaskManagerAPI.DataAccess.Entity
         public System.DateTime End_Date { get; set; }
         public int Priority { get; set; }
         public bool Is_Active { get; set; }
-        public string Created_By { get; set; }
-        public System.DateTime Created_Date { get; set; }
-        public string Modified_By { get; set; }
-        public Nullable<System.DateTime> Modified_Date { get; set; }
+        public int Project_Id { get; set; }
+        public string Status { get; set; }
     
         public virtual Parent_Task Parent_Task { get; set; }
+        public virtual Project Project { get; set; }
     }
 }

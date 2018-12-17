@@ -1,0 +1,4 @@
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\Bom\bin\Debug\Bom.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\Bom\bin\Debug\Bom.pdb
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\Bom\obj\Debug\Bom.dll
+C:\TaskManager\TaskMangerAPI\TaskManagerAPI\packages\OpenCover.4.6.519\SampleSln\Bom\obj\Debug\Bom.pdb

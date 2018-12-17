@@ -14,5 +14,9 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
         void DeleteTask(Task task);
         TaskModel GetTaskDetailsById(int taskId);
         List<TaskDetailsModel> GetParentTaskDetails();
+        void SaveUser(User user);
+        void DeleteUser(User user);
+        UserModel GetUserDetailsById(int UserId);
+        List<UserModel> GetUserDetails();
     }
 }

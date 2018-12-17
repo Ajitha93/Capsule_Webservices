@@ -39,5 +39,23 @@ namespace TaskManagerAPI.Business.TaskMaintenance
         {
             return _iTaskDataRepository.GetParentTaskDetails();
         }
+        public void SaveUser(UserModel userModel)
+        {
+            var user = Mapper.Map<UserModel, User>(userModel);
+            _iTaskDataRepository.SaveUser(user);
+        }
+        public void DeleteUser(UserModel userModel)
+        {
+            var user = Mapper.Map<UserModel, User>(userModel);
+            _iTaskDataRepository.DeleteUser(user);
+        }
+        public List<UserModel> GetUsers()
+        {
+            return _iTaskDataRepository.GetUserDetails();
+        }
+        public UserModel GetUserDetailsById(int UserId)
+        {
+            return _iTaskDataRepository.GetUserDetailsById(UserId);
+        }
     }
 }

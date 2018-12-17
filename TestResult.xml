@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Tests\bin\Debug\TaskManagerAPI.Tests.dll" total="6" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-12-01" time="11:03:43">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8937" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\TaskManager\TaskMangerAPI\TaskManagerAPI" machine-name="DOTNET" user="Admin" user-domain="DOTNET" />
+  <culture-info current-culture="en-IN" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Tests\bin\Debug\TaskManagerAPI.Tests.dll" executed="True" result="Failure" success="False" time="3.884" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="TaskManagerAPI" executed="True" result="Failure" success="False" time="3.879" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="3.878" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Controllers" executed="True" result="Failure" success="False" time="3.878" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="TaskManagerControllerTest" executed="True" result="Failure" success="False" time="3.877" asserts="0">
+                    <results>
+                      <test-case name="TaskManagerAPI.Tests.Controllers.TaskManagerControllerTest.AddTask" executed="True" result="Success" success="True" time="2.345" asserts="0" />
+                      <test-case name="TaskManagerAPI.Tests.Controllers.TaskManagerControllerTest.DeleteTask" executed="True" result="Success" success="True" time="0.616" asserts="0" />
+                      <test-case name="TaskManagerAPI.Tests.Controllers.TaskManagerControllerTest.GetParentTaskDetails" executed="True" result="Success" success="True" time="0.020" asserts="0" />
+                      <test-case name="TaskManagerAPI.Tests.Controllers.TaskManagerControllerTest.GetTaskById" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                      <test-case name="TaskManagerAPI.Tests.Controllers.TaskManagerControllerTest.UpdateTask" executed="True" result="Failure" success="False" time="0.020" asserts="0">
+                        <failure>
+                          <message><![CDATA[API Failed]]></message>
+                          <stack-trace><![CDATA[at TaskManagerAPI.Tests.Controllers.TaskManagerControllerTest.UpdateTask() in C:\TaskManager\TaskMangerAPI\TaskManagerAPI\TaskManagerAPI.Tests\Controllers\TaskManagerControllerTest.cs:line 74
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="TaskManagerAPI.Tests.Controllers.TaskManagerControllerTest.ViewTasks" executed="True" result="Success" success="True" time="0.144" asserts="0" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

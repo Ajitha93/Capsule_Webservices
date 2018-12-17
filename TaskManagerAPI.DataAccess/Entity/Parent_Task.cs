@@ -22,10 +22,6 @@ namespace TaskManagerAPI.DataAccess.Entity
     
         public int Parent_Task_Id { get; set; }
         public string Parent_Task1 { get; set; }
-        public string Created_By { get; set; }
-        public System.DateTime Created_Date { get; set; }
-        public string Modified_By { get; set; }
-        public Nullable<System.DateTime> Modified_Date { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Task> Tasks { get; set; }

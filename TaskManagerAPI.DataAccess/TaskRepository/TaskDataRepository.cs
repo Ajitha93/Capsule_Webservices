@@ -16,16 +16,12 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
             {
                 task.Is_Active = true;
                 if (task.Task_Id == 0)
-                {
-                    task.Created_By = "439052";
-                    task.Created_Date = DateTime.Now;
+                {                    
                     taskManagerEntities.Tasks.Add(task);
                     taskManagerEntities.Entry(task).State = System.Data.Entity.EntityState.Added;
                 }
                 else
-                {
-                    task.Modified_By = "439052";
-                    task.Modified_Date = DateTime.Now;
+                {                   
                     taskManagerEntities.Tasks.Add(task);
                     taskManagerEntities.Entry(task).State = System.Data.Entity.EntityState.Modified;
                 }
@@ -66,9 +62,7 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
         {
             using ( taskManagerEntities = new TaskManagerEntities())
             {
-                task.Is_Active = false;
-                task.Modified_By = "439052";
-                task.Modified_Date = DateTime.Now;
+                task.Is_Active = false;                
                 taskManagerEntities.Tasks.Add(task);
                 taskManagerEntities.Entry(task).State = System.Data.Entity.EntityState.Modified;
                 //taskManagerEntities.Entry(task).State = System.Data.Entity.EntityState.Deleted;
@@ -88,11 +82,7 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
                                   Task = t.Task1,                                  
                                   Priority = t.Priority,
                                   StartDate = t.Start_Date,
-                                  EndDate = t.End_Date,
-                                  CreatedBy=t.Created_By,
-                                  CreatedDate=t.Created_Date,
-                                  ModifiedBy=t.Modified_By,
-                                  ModifiedDate=t.Modified_Date,
+                                  EndDate = t.End_Date,                                  
                                   IsActive=t.Is_Active
                               }).FirstOrDefault();
                 return result;          
@@ -106,6 +96,68 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
                     Select(x=> new TaskDetailsModel { ParentTaskId = x.Parent_Task_Id,
                         ParentTask=x.Parent_Task1 }).ToList();
                 return result;
+            }
+        }
+        public void SaveUser(User user)
+        {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {
+                user.Is_Active = true;
+                if (user.User_Id == 0)
+                {
+                    taskManagerEntities.Users.Add(user);
+                    taskManagerEntities.Entry(user).State = System.Data.Entity.EntityState.Added;
+                }
+                else
+                {
+                    taskManagerEntities.Users.Add(user);
+                    taskManagerEntities.Entry(user).State = System.Data.Entity.EntityState.Modified;
+                }
+                taskManagerEntities.SaveChanges();
+            }
+        }
+        public void DeleteUser(User user)
+        {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {
+                user.Is_Active = false;
+                taskManagerEntities.Users.Add(user);
+                taskManagerEntities.Entry(user).State = System.Data.Entity.EntityState.Modified;
+                taskManagerEntities.SaveChanges();
+            }
+        }
+        public List<UserModel> GetUserDetails()
+        {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {
+                var details = (from u in taskManagerEntities.Users
+                               where u.Is_Active==true
+                               select new UserModel
+                               {
+                                   User_Id = u.User_Id,
+                                   First_Name = u.First_Name,
+                                   Last_Name = u.Last_Name,
+                                   Employee_Id = u.Employee_Id,
+                                   Is_Active = u.Is_Active
+                               }).ToList();
+                return details;
+            }
+        }
+        public UserModel GetUserDetailsById(int UserId)
+        {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {
+                var details = (from u in taskManagerEntities.Users
+                               where u.User_Id== UserId
+                               select new UserModel
+                               {
+                                   User_Id = u.User_Id,
+                                   First_Name = u.First_Name,
+                                   Last_Name = u.Last_Name,
+                                   Employee_Id = u.Employee_Id,
+                                   Is_Active = u.Is_Active
+                               }).FirstOrDefault();
+                return details;
             }
         }
     }           

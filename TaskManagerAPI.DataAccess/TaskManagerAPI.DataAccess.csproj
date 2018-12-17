@@ -53,6 +53,9 @@
     <Compile Include="Entity\Parent_Task.cs">
       <DependentUpon>TaskManager.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\Project.cs">
+      <DependentUpon>TaskManager.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\Task.cs">
       <DependentUpon>TaskManager.tt</DependentUpon>
     </Compile>
@@ -70,6 +73,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TaskManager.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\User.cs">
+      <DependentUpon>TaskManager.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskRepository\ITaskDataRepository.cs" />
