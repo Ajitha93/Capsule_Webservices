@@ -18,5 +18,9 @@ namespace TaskManagerAPI.Business.TaskMaintenance
         List<UserModel> GetUsers();
         void DeleteUser(UserModel userModel);
         UserModel GetUserDetailsById(int UserId);
+        void SaveProject(ProjectModel projectModel);
+        void DeleteProject(ProjectModel projectModel);
+        List<ProjectModel> GetProjects();
+        ProjectModel GetProjectDetailsById(int ProjectId);
     }
 }

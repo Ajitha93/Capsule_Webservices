@@ -18,9 +18,25 @@ namespace TaskManagerAPI.Business.TaskMaintenance
         }
 
         public void InsertTask(TaskModel taskModel)
-        {            
-            var task=Mapper.Map<TaskModel,Task>(taskModel);
-            _iTaskDataRepository.InsertTask(task);
+        {
+            if (taskModel.IsParent == true)
+            {
+                var task = Mapper.Map<TaskModel, Parent_Task>(taskModel);
+                _iTaskDataRepository.InsertarentTask(task);
+            }
+            else
+            {
+                var task = Mapper.Map<TaskModel, Task>(taskModel);
+                var taskId=_iTaskDataRepository.InsertTask(task);
+                if (taskModel.EmployeeId != 0)
+                {
+                    var userModel = _iTaskDataRepository.GetUserDetailsById(taskModel.EmployeeId);
+                    var user = Mapper.Map<UserModel, User>(userModel);
+                    user.Task_Id = taskId;
+                    _iTaskDataRepository.SaveUser(user);
+
+                }
+            }
         }
         public List<TaskDetailsModel> GetTaskDetails(TaskSearchModel taskSearchModel)
         {
@@ -56,6 +72,37 @@ namespace TaskManagerAPI.Business.TaskMaintenance
         public UserModel GetUserDetailsById(int UserId)
         {
             return _iTaskDataRepository.GetUserDetailsById(UserId);
+        }
+        public void SaveProject(ProjectModel projectModel)
+        {
+            var proj = Mapper.Map<ProjectModel, Project>(projectModel);
+            _iTaskDataRepository.SaveProject(proj);
+            if(projectModel.Employee_Id!=0)
+            {
+                var userModel= _iTaskDataRepository.GetUserDetailsById(projectModel.Employee_Id);
+                var user = Mapper.Map<UserModel, User>(userModel);
+                user.Project_Id = projectModel.Project_Id;
+                _iTaskDataRepository.SaveUser(user);
+
+            }
+        }
+        public void DeleteProject(ProjectModel projectModel)
+        {
+            var proj = Mapper.Map<ProjectModel, Project>(projectModel);
+            _iTaskDataRepository.DeleteProject(proj);
+        }
+        public List<ProjectModel> GetProjects()
+        {
+            var list= _iTaskDataRepository.GetProjectDetails();
+            foreach(var l in list)
+            {
+                l.ProgressPercent = Convert.ToInt32(((l.Priority*100)/30));
+            }
+            return list;
+        }
+        public ProjectModel GetProjectDetailsById(int ProjectId)
+        {
+            return _iTaskDataRepository.GetProjectDetailsById(ProjectId);
         }
     }
 }

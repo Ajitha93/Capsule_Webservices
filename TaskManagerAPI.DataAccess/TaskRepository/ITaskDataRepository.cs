@@ -9,7 +9,7 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
 {
     public interface ITaskDataRepository
     {
-        void InsertTask(Task task);
+        int InsertTask(Task task);
         List<TaskDetailsModel> GetTaskDetails(TaskSearchModel taskSearchModel);
         void DeleteTask(Task task);
         TaskModel GetTaskDetailsById(int taskId);
@@ -18,5 +18,10 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
         void DeleteUser(User user);
         UserModel GetUserDetailsById(int UserId);
         List<UserModel> GetUserDetails();
+        void DeleteProject(Project project);
+        void SaveProject(Project project);
+        List<ProjectModel> GetProjectDetails();
+        ProjectModel GetProjectDetailsById(int ProjectId);
+        void InsertarentTask(Parent_Task task);
     }
 }

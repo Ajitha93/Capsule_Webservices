@@ -72,5 +72,23 @@ namespace TaskManagerAPI.Controllers
             var user = _ITaskMaintenance.GetUserDetailsById(userModel.User_Id);
             return user;
         }
+        [HttpPost]
+        public void AddProject([FromBody]ProjectModel projectModel)
+        {
+            _ITaskMaintenance.SaveProject(projectModel);
+        }
+        [HttpPost]
+        public List<ProjectModel> ViewProjects()
+        {
+            return _ITaskMaintenance.GetProjects();
+        }
+
+        [HttpPost]
+        public void DeleteProject([FromBody]ProjectModel projectModel)
+        {
+            var proj = _ITaskMaintenance.GetProjectDetailsById(projectModel.Project_Id);
+            if (proj != null)
+                _ITaskMaintenance.DeleteProject(proj);
+        }
     }
 }

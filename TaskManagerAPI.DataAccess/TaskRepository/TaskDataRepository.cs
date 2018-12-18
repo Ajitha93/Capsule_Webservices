@@ -10,13 +10,31 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
     public class TaskDataRepository : ITaskDataRepository
     {
         TaskManagerEntities taskManagerEntities;
-        public void InsertTask(Task task)
+        public void InsertarentTask(Parent_Task task)
         {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {                
+                if (task.Parent_Task_Id == 0)
+                {
+                    taskManagerEntities.Parent_Task.Add(task);
+                    taskManagerEntities.Entry(task).State = System.Data.Entity.EntityState.Added;
+                }
+                else
+                {
+                    taskManagerEntities.Parent_Task.Add(task);
+                    taskManagerEntities.Entry(task).State = System.Data.Entity.EntityState.Modified;
+                }
+                taskManagerEntities.SaveChanges();
+            }
+        }
+        public int InsertTask(Task task)
+        {           
             using ( taskManagerEntities = new TaskManagerEntities())
             {
-                task.Is_Active = true;
+                
                 if (task.Task_Id == 0)
-                {                    
+                {
+                    task.Is_Active = true;
                     taskManagerEntities.Tasks.Add(task);
                     taskManagerEntities.Entry(task).State = System.Data.Entity.EntityState.Added;
                 }
@@ -27,6 +45,7 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
                 }
                 taskManagerEntities.SaveChanges();
             }
+            return task.Task_Id;
         }
         public List<TaskDetailsModel> GetTaskDetails(TaskSearchModel taskSearchModel)
         {
@@ -102,14 +121,15 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
         {
             using (taskManagerEntities = new TaskManagerEntities())
             {
-                user.Is_Active = true;
+                
                 if (user.User_Id == 0)
                 {
+                    user.Is_Active = true;
                     taskManagerEntities.Users.Add(user);
                     taskManagerEntities.Entry(user).State = System.Data.Entity.EntityState.Added;
                 }
                 else
-                {
+                {                    
                     taskManagerEntities.Users.Add(user);
                     taskManagerEntities.Entry(user).State = System.Data.Entity.EntityState.Modified;
                 }
@@ -158,6 +178,69 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
                                    Is_Active = u.Is_Active
                                }).FirstOrDefault();
                 return details;
+            }
+        }
+        public List<ProjectModel> GetProjectDetails()
+        {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {
+                var proj = (from p in taskManagerEntities.Projects
+                            select new ProjectModel
+                            {
+                                Project_Id = p.Project_Id,
+                                Project_Name = p.Project_Name,
+                                Start_Date = p.Start_Date,
+                                End_Date = p.End_Date,
+                                Priority = p.Priority,                                
+                                Is_Active = p.Is_Active
+                            }).ToList();
+                return proj;
+            }
+        }
+        public void SaveProject(Project project)
+        {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {
+                project.Is_Active = true;
+                if (project.Project_Id == 0)
+                {
+                    taskManagerEntities.Projects.Add(project);
+                    taskManagerEntities.Entry(project).State = System.Data.Entity.EntityState.Added;
+                }
+                else
+                {
+                    taskManagerEntities.Projects.Add(project);
+                    taskManagerEntities.Entry(project).State = System.Data.Entity.EntityState.Modified;
+                }
+                taskManagerEntities.SaveChanges();
+            }
+        }
+        public void DeleteProject(Project project)
+        {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {
+                project.Is_Active = false;
+                taskManagerEntities.Projects.Add(project);
+                taskManagerEntities.Entry(project).State = System.Data.Entity.EntityState.Modified;
+                taskManagerEntities.SaveChanges();
+            }
+        }
+        public ProjectModel GetProjectDetailsById(int ProjectId)
+        {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {
+                var proj = (from p in taskManagerEntities.Projects
+                            where p.Project_Id== ProjectId
+                            select new ProjectModel
+                            {
+                                Project_Id = p.Project_Id,
+                                Project_Name = p.Project_Name,
+                                Start_Date = p.Start_Date,
+                                End_Date = p.End_Date,
+                                Priority = p.Priority,
+                                Is_Active = p.Is_Active
+                            }).FirstOrDefault();
+                return proj;
             }
         }
     }           
