@@ -147,10 +147,10 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
         {
             using (taskManagerEntities = new TaskManagerEntities())
             {
-                
+                user.Is_Active = true;
                 if (user.User_Id == 0)
                 {
-                    user.Is_Active = true;
+                   
                     taskManagerEntities.Users.Add(user);
                     taskManagerEntities.Entry(user).State = System.Data.Entity.EntityState.Added;
                 }
