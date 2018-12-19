@@ -74,6 +74,76 @@ namespace TaskManagerAPI.NBench
             };
             taskManagerController.AddTask(task);           
         }
+        [PerfBenchmark(RunMode = RunMode.Iterations, NumberOfIterations = 500, TestMode = TestMode.Test, SkipWarmups = true)]
+        [ElapsedTimeAssertion(MaxTimeMilliseconds = 600000)]
+        public void AddUser()
+        {           
+                UserModel user = new UserModel();
+                user.Employee_Id = 1002;
+                user.First_Name = "NBench First";
+                user.Last_Name = "NBench Last";
+                taskManagerController.AddUser(user);           
+        }
+        [PerfBenchmark(RunMode = RunMode.Iterations, NumberOfIterations = 500, TestMode = TestMode.Test, SkipWarmups = true)]
+        [ElapsedTimeAssertion(MaxTimeMilliseconds = 600000)]
+        public void ViewUsers()
+        {
+                var results = taskManagerController.ViewUsers();           
+        }
+        [PerfBenchmark(RunMode = RunMode.Iterations, NumberOfIterations = 500, TestMode = TestMode.Test, SkipWarmups = true)]
+        [ElapsedTimeAssertion(MaxTimeMilliseconds = 600000)]
+        public void DeleteUser()
+        {
+                var user = new UserModel()
+                {
+                    User_Id = 1
+                };
+            taskManagerController.DeleteUser(user);
+           
+        }
+        [PerfBenchmark(RunMode = RunMode.Iterations, NumberOfIterations = 500, TestMode = TestMode.Test, SkipWarmups = true)]
+        [ElapsedTimeAssertion(MaxTimeMilliseconds = 600000)]
+        public void GetUserById()
+        {
+           
+                var user = new UserModel()
+                {
+                    User_Id = 1
+                };
+                var results = taskManagerController.GetUserById(user);
+            
+        }
+        [PerfBenchmark(RunMode = RunMode.Iterations, NumberOfIterations = 500, TestMode = TestMode.Test, SkipWarmups = true)]
+        [ElapsedTimeAssertion(MaxTimeMilliseconds = 600000)]
+        public void AddProject()
+        {
+           
+                ProjectModel project = new ProjectModel();
+                project.Project_Name = "NBench Project";
+                project.Priority = 10;
+            taskManagerController.AddProject(project);
+         
+        }
+        [PerfBenchmark(RunMode = RunMode.Iterations, NumberOfIterations = 500, TestMode = TestMode.Test, SkipWarmups = true)]
+        [ElapsedTimeAssertion(MaxTimeMilliseconds = 600000)]
+        public void ViewProjects()
+        {
+           
+                var results = taskManagerController.ViewProjects();
+            
+        }
+        [PerfBenchmark(RunMode = RunMode.Iterations, NumberOfIterations = 500, TestMode = TestMode.Test, SkipWarmups = true)]
+        [ElapsedTimeAssertion(MaxTimeMilliseconds = 600000)]
+        public void DeleteProject()
+        {
+            
+                var proj = new ProjectModel()
+                {
+                    Project_Id = 1
+                };
+            taskManagerController.DeleteProject(proj);
+           
+        }
         [PerfCleanup]
         public void Cleanup(BenchmarkContext context)
         {

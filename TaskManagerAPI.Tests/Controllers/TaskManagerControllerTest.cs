@@ -34,8 +34,8 @@ namespace TaskManagerAPI.Tests.Controllers
                 task.ParentTaskId = 1;
                 task.Priority = 10;
                 task.StartDate = DateTime.Now;
-                task.EndDate = DateTime.Now.AddDays(7);               
-
+                task.EndDate = DateTime.Now.AddDays(7);
+                task.ProjectId = 1;
                 taskMangerController.AddTask(task);               
                 
             }
@@ -99,6 +99,111 @@ namespace TaskManagerAPI.Tests.Controllers
             try
             {
                 var results = taskMangerController.GetParentTaskDetails();
+            }
+            catch (Exception)
+            {
+                Assert.Fail("API Failed");
+            }
+        }
+        [Test]
+        public void AddUser()
+        {
+            try
+            {
+                UserModel user = new UserModel();
+                user.Employee_Id = 1002;
+                user.First_Name = "NUnit First";
+                user.Last_Name = "Nunit Last";                
+                taskMangerController.AddUser(user);
+            }
+            catch (Exception)
+            {
+                Assert.Fail("API Failed");
+            }
+        }
+        [Test]
+        public void ViewUsers()
+        {
+            try
+            {
+                var results = taskMangerController.ViewUsers();
+            }
+            catch (Exception)
+            {
+                Assert.Fail("API Failed");
+            }
+        }
+        [Test]
+        public void DeleteUser()
+        {
+            try
+            {
+                var user = new UserModel()
+                {
+                    User_Id = 1
+                };
+                taskMangerController.DeleteUser(user);
+
+            }
+            catch (Exception)
+            {
+                Assert.Fail("API Failed");
+            }
+        }
+        [Test]
+        public void GetUserById()
+        {
+            try
+            {
+                var user = new UserModel()
+                {
+                    User_Id = 1
+                };
+                var results = taskMangerController.GetUserById(user);
+            }
+            catch (Exception)
+            {
+                Assert.Fail("API Failed");
+            }
+        }
+        [Test]
+        public void AddProject()
+        {
+            try
+            {
+                ProjectModel project = new ProjectModel();
+                project.Project_Name = "Nunit Project";
+                project.Priority = 10;
+                taskMangerController.AddProject(project);
+            }
+            catch (Exception)
+            {
+                Assert.Fail("API Failed");
+            }
+        }
+        [Test]
+        public void ViewProjects()
+        {
+            try
+            {
+                var results = taskMangerController.ViewProjects();
+            }
+            catch (Exception)
+            {
+                Assert.Fail("API Failed");
+            }
+        }
+        [Test]
+        public void DeleteProject()
+        {
+            try
+            {
+                var proj = new ProjectModel()
+                {
+                    Project_Id = 1
+                };
+                taskMangerController.DeleteProject(proj);
+
             }
             catch (Exception)
             {
