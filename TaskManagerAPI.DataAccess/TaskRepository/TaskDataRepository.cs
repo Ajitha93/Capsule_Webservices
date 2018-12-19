@@ -62,6 +62,7 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
                               && (taskSearchModel.PriorityTo == null || t.Priority <= taskSearchModel.PriorityTo)
                               && (taskSearchModel.StartDate == null || t.Start_Date == taskSearchModel.StartDate)
                               && (taskSearchModel.EndDate == null || t.End_Date == taskSearchModel.EndDate)
+                              &&(taskSearchModel.ProjectId==0 || t.Project_Id==taskSearchModel.ProjectId)
                               )
                               select new TaskDetailsModel()
                               {
@@ -72,7 +73,9 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
                                   Priority = t.Priority,
                                   StartDate = t.Start_Date,
                                   EndDate = t.End_Date,
-                                  IsActive=t.Is_Active
+                                  IsActive=t.Is_Active,
+                                  Status=t.Status,
+                                  ProjectId=t.Project_Id
                               }).ToList();
                 return result;
             }
@@ -102,9 +105,32 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
                                   Priority = t.Priority,
                                   StartDate = t.Start_Date,
                                   EndDate = t.End_Date,                                  
-                                  IsActive=t.Is_Active
+                                  IsActive=t.Is_Active,
+                                  Status = t.Status,
+                                  ProjectId = t.Project_Id
                               }).FirstOrDefault();
                 return result;          
+            }
+        }
+        public List<TaskModel> GetTaskDetailsByProjId(int projId)
+        {
+            using (taskManagerEntities = new TaskManagerEntities())
+            {
+                var result = (from t in taskManagerEntities.Tasks
+                              where t.Project_Id == projId
+                              select new TaskModel()
+                              {
+                                  TaskId = t.Task_Id,
+                                  ParentTaskId = t.Parent_Task_Id,
+                                  Task = t.Task1,
+                                  Priority = t.Priority,
+                                  StartDate = t.Start_Date,
+                                  EndDate = t.End_Date,
+                                  IsActive = t.Is_Active,
+                                  Status = t.Status,
+                                  ProjectId = t.Project_Id
+                              }).ToList();
+                return result;
             }
         }
         public List<TaskDetailsModel> GetParentTaskDetails()
@@ -184,7 +210,7 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
         {
             using (taskManagerEntities = new TaskManagerEntities())
             {
-                var proj = (from p in taskManagerEntities.Projects
+                var proj = (from p in taskManagerEntities.Projects 
                             select new ProjectModel
                             {
                                 Project_Id = p.Project_Id,
@@ -192,7 +218,7 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
                                 Start_Date = p.Start_Date,
                                 End_Date = p.End_Date,
                                 Priority = p.Priority,                                
-                                Is_Active = p.Is_Active
+                                Is_Active = p.Is_Active,                                
                             }).ToList();
                 return proj;
             }

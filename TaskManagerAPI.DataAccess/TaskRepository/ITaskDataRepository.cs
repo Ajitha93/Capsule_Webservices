@@ -23,5 +23,6 @@ namespace TaskManagerAPI.DataAccess.TaskRepository
         List<ProjectModel> GetProjectDetails();
         ProjectModel GetProjectDetailsById(int ProjectId);
         void InsertarentTask(Parent_Task task);
+        List<TaskModel> GetTaskDetailsByProjId(int projId);
     }
 }

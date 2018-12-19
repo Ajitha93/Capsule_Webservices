@@ -45,7 +45,8 @@ namespace TaskManagerAPI.Business.TaskMaintenance
         public void DeleteTask(TaskModel taskModel)
         {
             var task = Mapper.Map<TaskModel, Task>(taskModel);
-            _iTaskDataRepository.DeleteTask(task);
+            task.Status = "Completed";
+            _iTaskDataRepository.DeleteTask(task);            
         }
         public TaskModel GetTaskDetailsById(int taskId)
         {
@@ -97,6 +98,12 @@ namespace TaskManagerAPI.Business.TaskMaintenance
             foreach(var l in list)
             {
                 l.ProgressPercent = Convert.ToInt32(((l.Priority*100)/30));
+                var details = _iTaskDataRepository.GetTaskDetailsByProjId(l.Project_Id);
+                if (details != null && details.Count > 0)
+                {
+                    l.Status = details[0].Status;
+                    l.NumberOfTasks = details.Count;
+                }
             }
             return list;
         }

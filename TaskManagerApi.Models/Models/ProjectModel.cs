@@ -16,5 +16,7 @@ namespace TaskManagerApi.Models.Models
         public bool Is_Active { get; set; }
         public int Employee_Id { get; set; }
         public int ProgressPercent { get; set; }
+        public string Status { get; set; }
+        public int NumberOfTasks { get; set; }
     }
 }

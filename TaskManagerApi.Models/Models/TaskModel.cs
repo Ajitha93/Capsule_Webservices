@@ -20,7 +20,7 @@ namespace TaskManagerApi.Models.Models
         public DateTime? ModifiedDate { get; set; }
         public bool IsActive { get; set; }
         public bool IsParent { get; set; }
-        public int ProjectId { get; set; }
+        public int? ProjectId { get; set; }
         public int EmployeeId { get; set; }
         public string Status { get; set; }
     }

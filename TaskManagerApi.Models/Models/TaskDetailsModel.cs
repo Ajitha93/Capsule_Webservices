@@ -16,6 +16,7 @@ namespace TaskManagerApi.Models.Models
         public DateTime EndDate { get; set; }
         public int Priority { get; set; }
         public bool IsActive { get; set; }
-
+        public int? ProjectId { get; set; }
+        public string Status { get; set; }
     }
 }
